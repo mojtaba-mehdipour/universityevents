@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    این فایل، فرم افزودن رویداد است.
+    آن را داخل یک AlertDialog نمایش خواهیم داد.
+
+    ScrollView کمک می‌کند در صفحه‌های کوچک نیز بتوان
+    با اسکرول به همه فیلدهای فرم دسترسی داشت.
+-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:fillViewport="true">
+
+    <!-- عناصر فرم به صورت عمودی قرار می‌گیرند. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!--
+            فیلد عنوان:
+            کاربر نام رویداد را وارد می‌کند.
+        -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="عنوان رویداد"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtEventTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="مثلاً کارگاه برنامه‌نویسی"
+            android:inputType="textCapSentences"
+
+            android:singleLine="true" />
+
+
+        <!-- فیلد تاریخ برگزاری -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="تاریخ برگزاری"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtEventDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="مثلاً 1405/08/25"
+            android:inputType="text"
+
+            android:singleLine="true" />
+
+
+        <!-- فیلد محل برگزاری -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="محل برگزاری"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtEventLocation"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="مثلاً کارگاه کامپیوتر"
+            android:inputType="textCapSentences"
+
+            android:singleLine="true" />
+
+
+        <!-- برچسب دسته‌بندی -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="دسته‌بندی رویداد"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:layout_marginTop="12dp" />
+
+        <!--
+            Spinner یک فهرست انتخابی ایجاد می‌کند.
+            گزینه‌های آن را در Java به Spinner متصل خواهیم کرد.
+        -->
+        <Spinner
+            android:id="@+id/spnEventCategory"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="4dp" />
+
+
+        <!-- فیلد توضیحات -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="توضیحات"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtEventDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="توضیحات تکمیلی رویداد را بنویسید"
+
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top|start" />
+
+    </LinearLayout>
+
+</ScrollView>
