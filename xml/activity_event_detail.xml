@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    صفحه جزئیات یک رویداد دانشگاهی
+    اطلاعات از طریق Intent از MainActivity دریافت می‌شوند.
+-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <!-- عنوان صفحه -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="جزئیات رویداد"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#17365D"
+
+            android:layout_marginBottom="24dp" />
+
+        <!-- عنوان واقعی رویداد -->
+        <TextView
+            android:id="@+id/txtEventTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="عنوان رویداد"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+
+            android:layout_marginBottom="20dp" />
+
+        <!-- تاریخ -->
+        <TextView
+            android:id="@+id/txtEventDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="تاریخ برگزاری"
+            android:textSize="16sp"
+            android:textColor="#444444"
+
+            android:layout_marginBottom="12dp" />
+
+        <!-- محل برگزاری -->
+        <TextView
+            android:id="@+id/txtEventLocation"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="محل برگزاری"
+            android:textSize="16sp"
+            android:textColor="#444444"
+
+            android:layout_marginBottom="12dp" />
+
+        <!-- دسته‌بندی -->
+        <TextView
+            android:id="@+id/txtEventCategory"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="دسته‌بندی"
+            android:textSize="16sp"
+            android:textColor="#444444"
+
+            android:layout_marginBottom="12dp" />
+
+        <!-- توضیحات -->
+        <TextView
+            android:id="@+id/txtEventDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="توضیحات رویداد"
+            android:textSize="16sp"
+            android:textColor="#444444"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- دکمه بازگشت -->
+        <Button
+            android:id="@+id/btnBack"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="بازگشت به صفحه اصلی" />
+
+    </LinearLayout>
+
+</ScrollView>
