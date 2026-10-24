@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    صفحه اصلی اپلیکیشن رویدادهای دانشگاه
+    در این صفحه:
+    1. عنوان برنامه
+    2. دکمه‌های اصلی
+    3. فهرست رویدادهای ثبت‌شده
+    نمایش داده می‌شوند.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F7FA">
+
+    <!-- عنوان برنامه -->
+    <TextView
+        android:id="@+id/txtAppTitle"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="رویدادهای دانشگاه"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#17365D"
+
+        android:gravity="center"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- توضیح کوتاه برنامه -->
+    <TextView
+        android:id="@+id/txtWelcome"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="رویدادهای آموزشی، فرهنگی و دانشجویی"
+
+        android:textSize="14sp"
+        android:textColor="#555555"
+
+        android:gravity="center"
+
+        android:layout_marginBottom="12dp" />
+
+    <!-- دکمه مشاهده رویداد نمونه -->
+    <Button
+        android:id="@+id/btnShowEvent"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="مشاهده رویداد نمونه" />
+
+    <!-- دکمه باز کردن فرم ثبت رویداد -->
+    <Button
+        android:id="@+id/btnAddEvent"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="افزودن رویداد"
+
+        android:layout_marginTop="8dp" />
+
+    <!-- دکمه تنظیمات -->
+    <Button
+        android:id="@+id/btnSettings"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="تنظیمات"
+
+        android:layout_marginTop="8dp" />
+
+    <!-- عنوان بخش فهرست -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="فهرست رویدادها"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#17365D"
+
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp" />
+
+    <!--
+        این بخش در Java پر می‌شود.
+        هر بار که رویدادی ثبت شود، یک View جدید به آن اضافه می‌کنیم.
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutEventList"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>
