@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- صفحه اصلی برنامه مدیریت دانشجویان -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- عنوان برنامه -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مدیریت دانشجویان"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <!-- دکمه باز کردن فرم ثبت دانشجو -->
+    <Button
+        android:id="@+id/btnAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ثبت دانشجو"
+        android:layout_marginTop="12dp" />
+
+    <!-- عنوان فهرست دانشجویان -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فهرست دانشجویان ثبت‌شده:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="8dp" />
+
+    <!--
+        ScrollView امکان پیمایش فهرست را فراهم می‌کند.
+        اگر تعداد دانشجویان زیاد شود،
+        کاربر می‌تواند صفحه را به بالا و پایین حرکت دهد.
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--
+            اطلاعات دانشجویان به صورت برنامه‌نویسی‌شده
+            داخل این LinearLayout قرار می‌گیرند.
+        -->
+        <LinearLayout
+            android:id="@+id/layoutStudentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" />
+
+    </ScrollView>
+
+</LinearLayout>
