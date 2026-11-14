@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- فرم ورود اطلاعات دانشجو -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- عنوان فرم -->
+    <TextView
+        android:id="@+id/txtDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اطلاعات دانشجو"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <!-- ورودی نام و نام خانوادگی -->
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام و نام خانوادگی"
+        android:inputType="textPersonName"
+        android:layout_marginTop="15dp" />
+
+    <!-- ورودی رشته تحصیلی -->
+    <EditText
+        android:id="@+id/edtStudentField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رشته تحصیلی"
+        android:inputType="text"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
